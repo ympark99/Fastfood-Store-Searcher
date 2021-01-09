@@ -1,2 +1,5 @@
 # Fastfood-store
-Find Fastfood store in korea
+
+## Find all the fast food restaurants in the Korea!
+
+## Name, address searchable
