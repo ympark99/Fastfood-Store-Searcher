@@ -11,29 +11,47 @@
     src="https://code.jquery.com/jquery-3.5.1.js" 
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
     crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />   
     <script src="scripts.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <div class="title">패스트푸드점 찾기</div>
+        <div class="header1">
+            <i class="fas fa-hamburger"></i>
+            FASTFOOD STORE SEARCHER
+        </div>
+        <div class="header2">
+            <div class="title">전국 패스트푸드점 검색</div>
             <div class="search">
                 <input id="txt-search" type="text" />
                 <button class="btn-search">검색</button>
             </div>
         </div>
         <div class="body">
-            <div class="total"></div>
+            <div class="body-header">
+                <div class="total"></div>
+                <select name="viewlist" id="viewlist" onchange="changelist()">
+                    <option value="10">10개씩</option>
+                    <option value="20">20개씩</option>
+                    <option value="30">30개씩</option>
+                    <option value="40">40개씩</option>
+                    <option value="50">50개씩</option>
+                    <option value="100">100개씩</option>
+                </select>
+            </div>
             <div class="list"></div>
         </div>
         <div class="paging"></div>
     </div>
 
     <div id="item-template" class="item">
-        <div class="item-no">a</div>
+        <div class="item-no"></div>
         <div class="item-detail">
-            <div class="item-name">a</div>
-            <div class="item-addr">a</div>
+            <div class="item-name"></div>
+            <div class="item-addr"></div>
         </div>
     </div>
 </body>
