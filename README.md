@@ -1,4 +1,5 @@
 # Fastfood-store
+- https://ympark99.github.io/Fastfood-Store-Searcher/
 
 ## Find all the fast food restaurants in the Korea!
 
